@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.
+    min.css') }}">
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <ul id="todo-list"></ul>
+    <form onsubmit="return addTodo()">
+        <label for="new-todo">New tasks To-Do:</label>
+        <input type="text" id="new-todo" name="new-todo">
+        <button type="submit">Add</button>
+    </form>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}">
+    </script>
+    <script>
+        let todoList = [];
+        function addTodo() {
+            // Logic to add new to-do items using JavaScript
+            // Update the to-do list in the Jinja template
+            return false;
+        }
+    </script>
+</body>
+</html>
